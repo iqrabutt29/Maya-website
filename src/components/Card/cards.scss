@@ -1,0 +1,61 @@
+// CardComponent.scss
+@import '~bootstrap/scss/bootstrap';
+
+.custom-card {
+//   width: 120px;
+//   height: 168px;
+//   top: 449px;
+//   left: 299px;
+  padding: 10px ;
+//   background: rgba(240, 244, 248, 1);
+  background: rgba(240, 244, 248, 1)
+  !important;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07) !important;
+  border: 2px solid transparent !important;
+  border-radius: 0px !important;
+  margin-bottom: 10px; /* Gap between cards */
+.card-margin{
+    margin: 6rem 0px;
+}
+  .card-body {
+    padding: 0; /* Remove default Card.Body padding */
+
+    .card-title {
+      font-size: 1rem; /* Adjust title font size */
+      font-weight: bold;
+      margin-bottom: 10px; /* Adjust title bottom margin */
+    }
+    .date-heading{
+        font-size: 65px;
+    }
+  .date-color{
+    color: rgba(95, 97, 104, 1);
+    font-size: 14px;
+    font-weight: 400;
+  }
+    .card-text {
+      font-size: 0.9rem; /* Adjust text font size */
+    }
+  }
+}
+/* YourComponent.scss */
+
+// YourComponent.scss
+
+// YourComponent.scss
+
+.custom-button {
+    font-size: 12px;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 300;
+    font-weight: bold;
+    background: linear-gradient(180deg, #FACB30 -18%, #FEF9C8 22.5%, #C49530 67.84%, #FFF8C4 116%);
+    color: black !important; 
+    border: none !important;
+    outline: none !important;
+    border-radius: none !important;
+    cursor: pointer;
+  
+  }
+  

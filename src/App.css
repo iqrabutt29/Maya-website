@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+.blog-banner-heading {
+  font-weight: 400;
+  font-size: 80px;
+  color: black;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rotated-text {
+  writing-mode: vertical-lr;
+  font-size: 12px;
+  text-orientation: mixed;
+  position: absolute;
+  left: 50%;
+  top: 70px !important;
+  transform: translateX(-50%) translateY(-50%); /* Center the text on the line */
+  z-index: 1; /* Ensure text is above the line */
+  letter-spacing: 1px;
+}
+/* .slider-line::after {
+  background: linear-gradient(
+      180deg,
+      #facb30 -18%,
+      #fef9c8 22.5%,
+      #c49530 67.84%,
+      #fff8c4 116%
+  );
+  content: "";
+  width: 5px;
+  height: 70%;
+  margin: auto;
+  position: absolute;
+  left: 11.4%;
+  top: 79%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+  z-index: 0; 
+} */
+.line {
+  content: '';
+  top: 85px;
+  padding: 4.6rem 0px;
+  border: 9px solid;
+  border-image: linear-gradient(to right, rgba(250, 203, 48, 1), rgba(254, 249, 200, 1), rgba(196, 149, 48, 1), rgba(255, 248, 195, 1)) 1; /* Set the line color using a linear gradient */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); /* Center the line horizontally and vertically */
+  z-index: 0; /* Ensure the line is below the text */
+}
+.card-margin{
+  margin: 6rem 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* .circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 55px ;
+  } */
+/* .circle {
+    width: 100px;
+    
+    height: 100px;
+    background-color:rgba(240, 244, 248, 1); 
+    border-radius: 50%;
+    display: flex;
+  padding: 0px 13px;
+    justify-content: center;
+    align-items: center;
+    color: black; 
+    font-size: 12px; 
+    font-weight: 300; 
   }
-}
+  .circle-line::after {
+   
+    content: "";
+    width: 5px;
+    height: 59px;
+    background: linear-gradient(
+        to right,
+        rgba(250, 203, 48, 1),
+        rgba(254, 249, 200, 1),
+        rgba(196, 149, 48, 1),
+        rgba(255, 248, 195, 1)
+    );
+    position: absolute;
+    top: 79.3%;
+    left: 11.3%;
+    transform: translateX(-50%);
+  } */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .Uparrow{
+    position: absolute;
+    top: 53%;
+    left: 9%;
   }
-  to {
-    transform: rotate(360deg);
+  .Downarrow{
+    position: absolute;
+    top: 169%;
+    left: 9%;
   }
-}
+  .slick-prev {
+    display: none !important;
+  }
+  .slick-next {
+    display: none !important;
+  }
